@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e416bbcd94.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather Pink App🌞</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search__header">
+        
+          <div class="search__header_wrapper">
+            <form id="search-form">
+              <div class="form__wrapper">
+                <div class="row height d-flex justify-content-center align-items-center">
+                  <div class="col-md-8">
+                    <div class="search">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter the city..."
+                  autofocus
+                  id="search-text-input"
+                />
+                <button class="btn btn-primary" id="search-text">            
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <span id="clear-input" class="clear-icon">
+                  <!-- <i class="fa-regular fa-circle-xmark" style="color: #6a55d3"></i> -->
+                </span>
+              </div>
+            </form>
+            <button id="current-city">
+              <i class="fas fa-location-arrow"></i> Current City
+            </button>
+          </div>
+             
+
+      <div class="row ukraine">
+        <div class="col-6">
+          <p class="feel">
+            <img src="" alt="clear" id="icon" class="feel" />
+            <span id="temperature"> </span> 
+            <a class="celsius">°C</a>
+          </p>
+          <p class="feel">
+            <i class="fa-solid fa-wind fa-sm" style="color: #ffffff"></i>
+            Wind:<span id="wind"> </span>
+          </p>
+        </div>
+        <div class="col-6 odesa">
+          <h4>
+            <span class="location-icon"
+              ><i
+                class="fa-solid fa-location-dot fa-2xs"
+                style="color: #ffffff"
+              ></i
+            ></span>
+            <span id="currentCity">Argentina</span>
+          </h4>
+          <p id="currentData"></p>
+          <p id="cloud">☁ Cloudy</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5 class="card-title">Wednesday</h5>
+          <div class="card">
+            <div class="card-body">
+              <img
+              src=""
+              alt=""
+              id="icon-wednesday"
+              class="feel"
+              width="50"
+              height="50"
+            />
+              <p class="day-temperature" id="temperature-wednesday"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="card-title">Thursday</h5>
+          <div class="card">
+            <div class="card-body">
+              <img
+              src=""
+              alt=""
+              id="icon-thursday"
+              class="feel"
+              width="50"
+              height="50"
+            />
+              <p class="day-temperature" id="temperature-thursday"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="card-title">Friday</h5>
+          <div class="card">
+            <div class="card-body">
+              <img
+              src=""
+              alt=""
+              id="icon-friday"
+              class="feel"
+              width="50"
+              height="50"
+            />
+              <p class="day-temperature" id="temperature-friday"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="card-title">Saturday</h5>
+          <div class="card">
+            <div class="card-body">
+              <img
+              src=""
+              alt=""
+              id="icon-saturday"
+              class="feel"
+              width="50"
+              height="50"
+            />
+              <p class="day-temperature" id="temperature-saturday"></p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h5 class="card-title">Sunday</h5>
+          <div class="card">
+            <div class="card-body">
+              <img
+              src=""
+              alt=""
+              id="icon-sunday"
+              class="feel"
+              width="50"
+              height="50"
+            />
+              <p class="day-temperature" id="temperature-sunday"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Created by
+      <a href="https://github.com/AnabellaSimonpietri" target="blank">
+        Anabella Simonpietri.
+      </a>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

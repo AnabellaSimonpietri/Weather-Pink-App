@@ -1,0 +1,127 @@
+body {
+  background: radial-gradient(
+    circle at 0.2% 0.5%,
+    rgb(252, 165, 241) 0%,
+    rgb(181, 255, 255) 100.2%
+  );
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+
+.search .fa-search {
+  font-size: 18px;
+  color: #6a55d3;
+  margin-right: 5px;
+}
+
+.search .form-control {
+  border: 0.5px dotted #7085e2;
+  border-radius: 30px;
+  margin-top: 30px;
+  padding: 10px 15px;
+}
+
+.search .btn-primary {
+  background-color: #6a55d3;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  margin-bottom: -30px;
+  color: #ffffff;
+}
+
+.search .btn-primary:hover {
+  background-color: #4b37a5;
+}
+
+.search .btn-primary i {
+  margin-left: 5px;
+}
+
+#current-city {
+  background: radial-gradient(
+    329px at 3.1% 9.3%,
+    rgb(251, 204, 235) 28.1%,
+    rgba(221, 221, 221, 0.15) 100.7%
+  );
+  border: 0.5px dotted rgb(112, 133, 226);
+  color: rgb(112, 133, 226);
+  outline: none;
+  padding: 10px 20px;
+  margin-top: 5px;
+  border-radius: 30px;
+}
+
+/* .celsius {
+    color: rgb(228, 148, 217);
+  } */
+
+.odesa {
+  text-align: right;
+}
+.feel {
+  font-size: larger;
+}
+.ukraine {
+  margin-bottom: 50px;
+}
+
+.container {
+  width: 900px;
+  background: rgb(233, 116, 170, 0.3);
+  background: url('https://anastacia-cloud-weather.netlify.app/assets/weather.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  padding-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.card {
+  border-radius: 50%;
+  width: 120px;
+  background: rgba(66, 127, 219, 0.3);
+  margin: 0 auto;
+}
+.card-title {
+  text-align: center;
+}
+
+.text-weather {
+  text-align: center;
+}
+
+h4 {
+  font-style: italic;
+  font-size: xx-large;
+}
+
+p {
+  margin: 0px;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(228, 148, 217);
+}
+
+.clear-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0;
+}
+
+#search-text-input:focus ~ .clear-icon {
+  opacity: 1;
+}
