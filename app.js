@@ -83,6 +83,14 @@ function showWeather(response) {
   });
 }
 
+function showArgentinaWeather() {
+  let apiKey = '5af46b7c735c00e84f63fde5be627fa5';
+  let city = 'Argentina'; // Ciudad para obtener el clima de Argentina
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiURL).then(showWeather);
+}
+
 currentDate.innerHTML = formatDate(now);
 
 let apiKey = '5af46b7c735c00e84f63fde5be627fa5';
@@ -119,8 +127,20 @@ function currentCity(position) {
 }
 
 function getCurrentPosition() {
-  navigator.geolocation.getCurrentPosition(currentCity);
+  navigator.geolocation.getCurrentPosition(
+    function (position) {
+      let latitude = position.coords.latitude;
+      let longitude = position.coords.longitude;
+      let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+      axios.get(apiUrl).then(showWeather);
+    },
+    function (error) {
+      // Si no se puede obtener la ubicación, muestra el clima de Argentina
+      showArgentinaWeather();
+    }
+  );
 }
+
 let button = document.querySelector('#current-city');
 button.addEventListener('click', getCurrentPosition);
 
